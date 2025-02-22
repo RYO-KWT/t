@@ -333,13 +333,13 @@
 
       const openModal = () => {
         modalWindow.showModal();
-        modalWindow.classList.add('is-active');
+        requestAnimationFrame(() => modalWindow.classList.add('is-active'));
         body.style.overflow = 'hidden';
       };
 
       const closeModal = () => {
-        modalWindow.close();
         modalWindow.classList.remove('is-active');
+        setTimeout(() => modalWindow.close(),800);
         body.style.removeProperty('overflow');
       };
 
