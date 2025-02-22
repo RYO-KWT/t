@@ -762,6 +762,10 @@ summary::-webkit-details-marker {
   padding-right: 8px;
 }
 
+.accordion__title {
+  display: inline-block;
+}
+
 .accordion__title::before {
   content: "";
   position: absolute;
