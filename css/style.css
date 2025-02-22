@@ -750,6 +750,7 @@ summary::-webkit-details-marker {
 
 .accordion__header {
   position: relative;
+  display: flex;
   padding: 8px 16px;
   font-size: 1.25rem;
   text-transform: uppercase;
@@ -763,7 +764,9 @@ summary::-webkit-details-marker {
 }
 
 .accordion__title {
-  display: inline-block;
+  position: relative;
+  display: block;
+  width: 100%;
 }
 
 .accordion__title::before {
@@ -890,7 +893,7 @@ summary::-webkit-details-marker {
 .modal__body {
   position: relative;
   padding: 16px;
-    border-radius: 8px;
+  border-radius: 8px;
   background: #333;
   color: #fcfcfc;
 }
